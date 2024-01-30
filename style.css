@@ -1,1 +1,13 @@
 @import url("node_modules/modern-normalize/modern-normalize.css");
+
+.about-me {
+    max-width: 600px;
+    margin: 0 auto;
+}
+h1, h2 {
+    color: #333;
+}
+p {
+    line-height: 1.5;
+    color: #666;
+}
