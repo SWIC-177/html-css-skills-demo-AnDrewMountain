@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="bg-slate-400">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -8,97 +8,175 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="page-container">
-      <h1>About Me! (Andrew Mountain)</h1>
+    <div>
+      <h1 class="text-center text-3xl font-bold text-red-700">
+        About Me! (Andrew Mountain)
+      </h1>
     </div>
 
-    <div class="about-me">
+    <div>
       <div>
-        <h2>My Love for Video Games</h2>
-        <p>
-          Video games have always been a significant part of my life, providing
-          both entertainment and a sense of adventure. Among my favorite games
-          are:
-        </p>
+        <div class="text-center">
+          <h2 class="text-2xl font-bold text-stone-800">
+            My Love for Video Games
+          </h2>
+          <p class="mx-auto max-w-lg text-left">
+            Video games have always been a significant part of my life,
+            providing both entertainment and a sense of adventure. Among my
+            favorite games are:
+          </p>
+        </div>
 
-        <ul>
-          <li>
-            <strong>Rocket League:</strong> The thrill of high-speed soccer with
-            rocket-powered cars never fails to captivate me.
-          </li>
-          <li>
-            <strong>Uncharted:</strong> The adventurous tales of Nathan Drake in
-            search of hidden treasures are truly mesmerizing.
-          </li>
-          <li>
-            <strong>Phasmophobia:</strong> Exploring haunted locations with
-            friends in this chilling cooperative game is an exhilarating
-            experience.
-          </li>
-          <li>
-            <strong>Lethal Company:</strong> The action-packed gameplay and
-            immersive storyline of this game always keep me on the edge of my
-            seat.
-          </li>
-          <li>
-            <strong>Postals 4:</strong> Engaging in chaotic battles and
-            completing missions in this game is both challenging and incredibly
-            fun.
-          </li>
-          <li>
-            <strong>It Takes Two:</strong> The cooperative gameplay and unique
-            storytelling in this game create an unforgettable gaming experience.
-          </li>
-        </ul>
+        <table class="mx-auto max-w-lg">
+          <thead>
+            <tr>
+              <th class="text-left">Game Name</th>
+              <th class="text-left">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="font-semibold text-orange-500">Rocket League</td>
+              <td>
+                The thrill of high-speed soccer with rocket-powered cars never
+                fails to captivate me.
+              </td>
+            </tr>
+            <tr>
+              <td class="font-semibold text-blue-600">Uncharted</td>
+              <td>
+                The adventurous tales of Nathan Drake in search of hidden
+                treasures are truly mesmerizing.
+              </td>
+            </tr>
+            <tr>
+              <td class="font-semibold text-stone-900">Phasmophobia</td>
+              <td>
+                Exploring haunted locations with friends in this chilling
+                cooperative game is an exhilarating experience.
+              </td>
+            </tr>
+            <tr>
+              <td class="font-semibold text-amber-600">Lethal Company</td>
+              <td>
+                The action-packed gameplay and immersive storyline of this game
+                always keep me on the edge of my seat.
+              </td>
+            </tr>
+            <tr>
+              <td class="font-semibold text-fuchsia-600">Postals 4</td>
+              <td>
+                Engaging in chaotic battles and completing missions in this game
+                is both challenging and incredibly fun.
+              </td>
+            </tr>
+            <tr>
+              <td class="font-semibold text-rose-600">It Takes Two</td>
+              <td>
+                The cooperative gameplay and unique storytelling in this game
+                create an unforgettable gaming experience.
+              </td>
+            </tr>
+          </tbody>
+        </table>
 
-        <p>
+        <p class="mx-auto max-w-lg text-left">
           These games not only provide entertainment but also serve as a way for
           me to unwind and immerse myself in different worlds.
         </p>
       </div>
 
-      <div class="work-section">
-        <h2>Places I Work</h2>
+      <div>
+        <h2 class="text-center text-2xl font-bold text-stone-800">
+          Places I Work
+        </h2>
 
-        <div class="job-description">
-          <h3>Menards - Carry Out</h3>
-          <p>
+        <div>
+          <h3 class="text-center text-2xl font-bold text-green-900">
+            Menards - Carry Out
+          </h3>
+          <p class="mx-auto max-w-lg text-left">
             Currently, I work at Menards as a Carry Out. The dynamic environment
             and the opportunity to assist customers with their purchases make
             every day at Menards unique.
           </p>
-          <img src="menards_photo.jpg" alt="Menards Store" class="job-image" />
+          <div class="flex items-center justify-center">
+            <img
+              src="menards_photo.jpg"
+              alt="Menards Store"
+              class="mr-4 h-32 w-32"
+            />
+          </div>
         </div>
 
-        <div class="job-description">
-          <h3>Texas Roadhouse - Togo Room</h3>
-          <p>
+        <div>
+          <h3 class="text-center text-2xl font-bold text-red-900">
+            Texas Roadhouse - Togo Room
+          </h3>
+          <p class="mx-auto max-w-lg text-left">
             In addition to my role at Menards, I also work at Texas Roadhouse in
             the Togo Room. Handling to-go orders and ensuring that customers
             receive delicious meals.
           </p>
-          <img
-            src="txrh.jpg"
-            alt="Texas Roadhouse Togo Room"
-            class="job-image"
-          />
+          <div class="flex items-center justify-center">
+            <img
+              src="txrh.jpg"
+              alt="Texas Roadhouse Togo Room"
+              class="h-32 w-32"
+            />
+          </div>
         </div>
       </div>
     </div>
 
-    <form class="centered-form">
-      <h1 class="form-title">Contact Me</h1>
+    <form class="mx-auto mt-8 max-w-md">
+      <h1 class="mb-4 text-2xl font-bold">Contact Me</h1>
 
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required />
+      <div class="mb-4">
+        <label for="name" class="block text-sm font-medium text-gray-700"
+          >Name:</label
+        >
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          class="mt-1 block w-full rounded-md border-gray-300 p-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+        />
+      </div>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
+      <div class="mb-4">
+        <label for="email" class="block text-sm font-medium text-gray-700"
+          >Email:</label
+        >
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          class="mt-1 block w-full rounded-md border-gray-300 p-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+        />
+      </div>
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="4" required></textarea>
+      <div class="mb-4">
+        <label for="message" class="block text-sm font-medium text-gray-700"
+          >Message:</label
+        >
+        <textarea
+          name="message"
+          id="message"
+          rows="4"
+          required
+          class="mt-1 block w-full rounded-md border-gray-300 p-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+        ></textarea>
+      </div>
 
-      <button type="submit">Submit</button>
+      <button
+        type="submit"
+        class="w-full rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+      >
+        Submit
+      </button>
     </form>
   </body>
 </html>
