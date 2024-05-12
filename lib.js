@@ -1,4 +1,4 @@
-const ERRORS = [
+export const ERRORS = [
   {
     id: "name",
     msg: "please enter your full name.",
@@ -13,3 +13,19 @@ const ERRORS = [
     msg: "Please enter a message between 10 and 100 characters long",
   },
 ];
+
+export const hideError = (el) => {
+  el.parentNode.querySelector(".error").classList.remove("is-error");
+};
+
+export const renderError = (el, msg) => {
+  const errorEl = el.parentNode.QuerySelector(".error");
+
+  if (errorEl) errorEl.classList.add("is-error");
+  else {
+    const errorElement = document.createElement("p");
+    errorElement.className = "error is-error";
+    errorElement.textContent = msg;
+    el.parentNode.appendChild(errorElement);
+  }
+};
