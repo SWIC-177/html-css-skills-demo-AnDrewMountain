@@ -19,6 +19,8 @@ export const hideError = (el) => {
 };
 
 export const renderError = (el, msg) => {
+  const elParent = el.parentNode;
+
   const errorEl = el.parentNode.QuerySelector(".error");
 
   if (errorEl) errorEl.classList.add("is-error");
@@ -26,6 +28,6 @@ export const renderError = (el, msg) => {
     const errorElement = document.createElement("p");
     errorElement.className = "error is-error";
     errorElement.textContent = msg;
-    el.parentNode.appendChild(errorElement);
+    elParent.appendChild(errorElement);
   }
 };
