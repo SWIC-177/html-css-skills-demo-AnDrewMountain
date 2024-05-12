@@ -7,7 +7,7 @@
  * show the error. For now, we are not validating the input fields.
  */
 
-import { ERRORS } from "./lib.js";
+import { ERRORS, hideError, renderError } from "./lib.js";
 
 console.log(ERRORS);
 
@@ -21,8 +21,8 @@ console.log(formEls);
 
 formEls.forEach((el) => {
   el.addEventListener("blur", (e) => {
-    console.log(
-      ERRORS.find((error) => error.id === e.target.id).validate(e.target.value),
-    );
+    const elError = ERRORS.find((error) => error.id === e.target.id);
+    if (!elError.validate(e.target.value)) renderError(e.target, elError.msg);
+    else hideError(e.target);
   });
 });
