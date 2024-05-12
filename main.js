@@ -7,16 +7,22 @@
  * show the error. For now, we are not validating the input fields.
  */
 
+import { ERRORS } from "./lib.js";
+
+console.log(ERRORS);
+
 const formEls = [
-  ...Array.form(document.querySelectorAll("input")),
+  ...Array.from(document.querySelectorAll("input")),
   document.querySelector("#message"),
 ];
 console.log(formEls);
 
-const submitBtn = document.querySelector("button[type='submit']");
+// const submitBtn = document.querySelector("button[type='submit']");
 
 formEls.forEach((el) => {
   el.addEventListener("blur", (e) => {
-    console.log("blur event", e.target.id, e.target.value);
+    console.log(
+      ERRORS.find((error) => error.id === e.target.id).validate(e.target.value),
+    );
   });
 });
